@@ -24,4 +24,9 @@ export class ContactPageComponent implements OnInit {
     this.message = `Hi, I'm interested in your ${this.listing?.name.toLowerCase()}!`;
   }
 
+  sendMessage(): void {
+    alert('Your message has been sent!');
+    this.router.navigateByUrl('/listings');
+  }
+
 }
