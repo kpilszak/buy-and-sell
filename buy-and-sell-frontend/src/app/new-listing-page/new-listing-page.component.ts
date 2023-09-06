@@ -19,4 +19,9 @@ export class NewListingPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(): void {
+    alert('Creating a new listing...');
+    this.router.navigateByUrl("/my-listings");
+  }
+
 }
