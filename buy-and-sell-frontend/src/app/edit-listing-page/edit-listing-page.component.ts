@@ -15,4 +15,9 @@ export class EditListingPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(): void {
+    alert('Saving changes to the listing...');
+    this.router.navigateByUrl('/my-listings');
+  }
+
 }
