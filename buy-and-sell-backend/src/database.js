@@ -15,5 +15,6 @@ export const db = {
                 if (error) reject(error);
                 resolve({ results, fields });
             })
-        })
+        }),
+    end: () => connection.end()
 }
