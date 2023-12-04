@@ -22,4 +22,8 @@ export class ListingsService {
     return this.http.get<Listing[]>('/api/listings');
   }
 
+  getListingById(id: string): Observable<Listing> {
+    return this.http.get<Listing>(`/api/listings/${id}`);
+  }
+
 }
