@@ -26,4 +26,11 @@ export class ListingsService {
     return this.http.get<Listing>(`/api/listings/${id}`);
   }
 
+  addViewToListing(id: string): Observable<Listing> {
+    return this.http.post<Listing>(
+      `/api/listings/${id}/add-view`,
+      {},
+      httpOptions
+    );
+  }
 }
