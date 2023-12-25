@@ -43,12 +43,11 @@ import { environment } from 'environments/environment';
   ],
   imports: [
     RouterModule,
-    RouterModule.forRoot(appRoutes),
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    AngularFireModule.initialieApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule
   ],
   providers: [],
