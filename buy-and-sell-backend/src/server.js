@@ -5,7 +5,7 @@ import { db } from './database';
 import credentials from '../credentials.json';
 
 admin.initializeApp({
-    credential: admin.credential.cert(credentials);
+    credential: admin.credential.cert(credentials)
 });
 
 let server;
